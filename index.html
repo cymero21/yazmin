@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday, My Love 🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV DOTS -->
+<nav id="nav-dots">
+  <div class="dot active" onclick="scrollToSection(0)" title="Home"></div>
+  <div class="dot" onclick="scrollToSection(1)" title="Memories"></div>
+  <div class="dot" onclick="scrollToSection(2)" title="Travel"></div>
+  <div class="dot" onclick="scrollToSection(3)" title="Plans"></div>
+  <div class="dot" onclick="scrollToSection(4)" title="Us"></div>
+</nav>
+
+<!-- ═══════════════════════════════
+     SECTION 1 — INTRO
+═══════════════════════════════ -->
+<section id="intro">
+  <div id="stars"></div>
+  <div id="balloons-container"></div>
+  <div id="confetti-container"></div>
+
+  <div id="hero-content">
+    <img id="hero-photo" src="hero-image.jpg" alt="Yussra" />
+    <span class="hbd-label">✦ Happy Birthday ✦</span>
+    <h1 id="hero-name">Yazmin</h1>
+    <p class="hero-sub">Today the whole world celebrates you, my love</p>
+  </div>
+
+  <p class="scroll-hint">↓ &nbsp; scroll</p>
+</section>
+
+<!-- ═══════════════════════════════
+     SECTION 2 — PHOTOS & MESSAGES
+═══════════════════════════════ -->
+<section id="memories" class="section">
+  <div class="hearts-bg" id="hearts-bg"></div>
+
+  <div style="position:relative;z-index:1;width:100%;display:flex;flex-direction:column;align-items:center;">
+    <p class="section-label reveal">Captured moments</p>
+    <h2 class="section-title reveal">Every memory with you<br>is a treasure</h2>
+    <div class="divider reveal"></div>
+
+    <div id="slideshow" class="reveal">
+
+      <!-- ─── SLIDE 1 ─── -->
+      <div class="slide active">
+        <img class="slide-photo" src="first slider.jpg" alt="Yussra">
+        <!-- Download "No Me Doy Por Vencido" by Luis Fonsi as no-me-doy-por-vencido.mp3 -->
+        <audio id="audio-1" src="no-me-doy-por-vencido.mp3" preload="none" loop></audio>
+        <div class="slide-message">
+          You in the sun hits different. Like the whole world just decided to light up the one thing that already had my full attention. I'm so lucky it's you.
+        </div>
+        <div class="song-indicator">
+          <div class="music-bars">
+            <div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div>
+          </div>
+          <span>No Me Doy Por Vencido — Luis Fonsi</span>
+        </div>
+      </div>
+
+      <!-- ─── SLIDE 2 ─── -->
+      <div class="slide">
+        <img class="slide-photo" src="second slider.jpg" alt="Yussra">
+        <!-- Download "Bésame Mucho" as besame-mucho.mp3 -->
+        <audio id="audio-2" src="besame-mucho.mp3" preload="none" loop></audio>
+        <div class="slide-message">
+          Even when you're just being silly, you're the most beautiful thing I've ever seen. This photo makes me smile every single time, just like you do.
+        </div>
+        <div class="song-indicator">
+          <div class="music-bars">
+            <div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div>
+          </div>
+          <span>Bésame Mucho — Consuelo Velázquez</span>
+        </div>
+      </div>
+
+      <!-- ─── SLIDE 3 ─── -->
+      <div class="slide">
+        <img class="slide-photo" src="third slider.jpg" alt="Yussra">
+        <!-- Download "Quiero" by Jesse & Joy as quiero.mp3 -->
+        <audio id="audio-3" src="quiero.mp3" preload="none" loop></audio>
+        <div class="slide-message">
+          That red hair was a whole era. You walked into a new version of yourself and owned every second of it. you rocked it so well.
+        </div>
+        <div class="song-indicator">
+          <div class="music-bars">
+            <div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div>
+          </div>
+          <span>Quiero — Jesse & Joy</span>
+        </div>
+      </div>
+
+      <!-- ─── SLIDE 4 ─── -->
+      <div class="slide">
+        <img class="slide-photo" src="fourth slider.jpg" alt="Yussra">
+        <!-- Download "Amor Eterno" by Rocío Dúrcal as amor-eterno.mp3 -->
+        <audio id="audio-4" src="amor-eterno.mp3" preload="none" loop></audio>
+        <div class="slide-message">
+          Laying there looking like that — absolutely effortless. You don't even try and you still take my breath away every time. I think about this picture more than I'd ever admit.
+        </div>
+        <div class="song-indicator">
+          <div class="music-bars">
+            <div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div>
+          </div>
+          <span>Amor Eterno — Rocío Dúrcal</span>
+        </div>
+      </div>
+
+      <!-- ─── SLIDE 5 ─── -->
+      <div class="slide">
+        <img class="slide-photo" src="fifth slider.jpg" alt="Yussra">
+        <!-- Download "Te Quiero" by Café Tacvba as te-quiero.mp3 -->
+        <audio id="audio-5" src="te-quiero.mp3" preload="none" loop></audio>
+        <div class="slide-message">
+          Even in a random moment at home, you're still gorgeous. This is the kind of everyday I want with you, nothing special, just you, and somehow that's always the best thing in the world.
+        </div>
+        <div class="song-indicator">
+          <div class="music-bars">
+            <div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div>
+          </div>
+          <span>Te Quiero — Café Tacvba</span>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="slide-nav">
+        <button class="slide-btn" id="prev-btn" onclick="changeSlide(-1)">&#8592;</button>
+        <span class="slide-counter" id="slide-counter">1 / 5</span>
+        <button class="slide-btn" id="next-btn" onclick="changeSlide(1)">&#8594;</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     SECTION 3 — TRAVEL
+═══════════════════════════════ -->
+<section id="travel" class="section">
+  <p class="section-label reveal">Someday, us</p>
+  <h2 class="section-title reveal">Places we're going<br>together</h2>
+  <div class="divider reveal"></div>
+
+  <div class="travel-grid reveal">
+
+    <div class="travel-card">
+      <img class="travel-img" src="mexico.jpg" alt="Mexico City">
+      <div class="travel-body">
+        <p class="travel-place">Mexico City, Mexico</p>
+        <p class="travel-note">Streets full of color, food, and music — we'll get lost in every single corner of it together. and you can show me around</p>
+      </div>
+    </div>
+
+    <div class="travel-card">
+      <img class="travel-img" src="france.jpg" alt="Paris, France">
+      <div class="travel-body">
+        <p class="travel-place">Paris, France</p>
+        <p class="travel-note">The Eiffel Tower at night, your hand in mine. That's the only Paris story I want to tell.</p>
+      </div>
+    </div>
+
+    <div class="travel-card">
+      <img class="travel-img" src="tokyo.jpg" alt="Tokyo, Japan">
+      <div class="travel-body">
+        <p class="travel-place">Tokyo, Japan</p>
+        <p class="travel-note">Neon lights at midnight, ramen at 2am, walking everywhere with nowhere to be. Just us.</p>
+      </div>
+    </div>
+
+    <div class="travel-card">
+      <img class="travel-img" src="switzerland.jpg" alt="Switzerland">
+      <div class="travel-body">
+        <p class="travel-place">Switzerland</p>
+        <p class="travel-note">Mountains, fresh air, and the most peaceful silence — I want to share that quiet with you.</p>
+      </div>
+    </div>
+
+    <div class="travel-card">
+      <img class="travel-img" src="norway.jpg" alt="Norway">
+      <div class="travel-body">
+        <p class="travel-place">Norway</p>
+        <p class="travel-note">Standing under the Northern Lights together. No better way to feel small and grateful all at once.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     SECTION 4 — WHAT WE'LL DO
+═══════════════════════════════ -->
+<section id="plans" class="section">
+  <p class="section-label reveal">Promises</p>
+  <h2 class="section-title reveal">What we're doing<br>when I see you</h2>
+  <div class="divider reveal"></div>
+
+  <div class="plans-list reveal">
+
+    <div class="plan-item">
+      <span class="plan-number">01</span>
+      <div>
+        <p class="plan-text">Cook together and make a mess of the kitchen</p>
+        <p class="plan-sub">Whatever you want to make, we make it — badly, perfectly, together</p>
+      </div>
+    </div>
+
+    <div class="plan-item">
+      <span class="plan-number">02</span>
+      <div>
+        <p class="plan-text">Watch every show on your list and mine, back to back</p>
+        <p class="plan-sub">No skipping intros, no spoilers, i want you locked in</p>
+      </div>
+    </div>
+
+    <div class="plan-item">
+      <span class="plan-number">03</span>
+      <div>
+        <p class="plan-text">Take a thousand photos just for us</p>
+        <p class="plan-sub">Ones we don't post — just ours, just to remember</p>
+      </div>
+    </div>
+
+    <div class="plan-item">
+      <span class="plan-number">04</span>
+      <div>
+        <p class="plan-text">Go somewhere neither of us has been before</p>
+        <p class="plan-sub">Doesn't matter where — new places hit different with the right person</p>
+      </div>
+    </div>
+
+    <div class="plan-item">
+      <span class="plan-number">05</span>
+      <div>
+        <p class="plan-text">Stay in and do absolutely nothing together</p>
+        <p class="plan-sub">Because being around you doing nothing still feels like everything</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     SECTION 5 — US PHOTO
+═══════════════════════════════ -->
+<section id="us-section" class="section">
+  <p class="section-label reveal">You & me</p>
+  <h2 class="section-title reveal">Us</h2>
+  <div class="divider reveal"></div>
+
+  <div class="us-photo-wrap reveal">
+    <!-- When ready, replace the div below with: <img class="us-photo" src="us.jpg" alt="Us"> -->
+    <div class="us-photo-placeholder">
+      <span>💑</span>
+      <img class="us-photo" src="birthday-photoshop.jpg" alt="Us">
+    </div>
+
+    <p class="us-caption">
+      Wherever life takes us,<br>
+      I choose <em>you</em> — every time.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  Made with love, just for <strong>Yazmin</strong> &nbsp;✦&nbsp; Happy Birthday 🎂
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
