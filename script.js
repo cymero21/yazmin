@@ -87,8 +87,8 @@ function changeSlide(dir) {
   }
 }
 
-/* Auto-advance every 20s */
-setInterval(() => changeSlide(1), 20000);
+/* Auto-advance every 15s */
+setInterval(() => changeSlide(1), 15000);
 
 /* ─── SCROLL REVEAL ─── */
 const revealEls = document.querySelectorAll('.reveal');
